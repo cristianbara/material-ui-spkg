@@ -117,5 +117,56 @@
         }
       }
     ]
+  },
+  {
+    "type": "Grid",
+    "namespace": "ReactFlexboxGrid",
+    "variant": "with single column in the row",
+    "props": {
+      "fluid": true
+    },
+    "children": [
+      {
+        "type": "Row",
+        "variant": "default",
+        "children": [
+          {
+            "type": "Col",
+            "variant": "default",
+            "children": [
+              {
+                "type": "div",
+                "variant": "default",
+                "props": {
+                  "style": {
+                    "padding": "5em"
+                  }
+                },
+                "children": [
+                  {
+                    "type": "Placeholder",
+                    "variant": "default",
+                    "props": {},
+                    "children": [],
+                    "namespace": "ReactFlexboxGrid"
+                  }
+                ]
+              }
+            ],
+            "namespace": "ReactFlexboxGrid",
+            "props": {
+              "xs": 12,
+              "sm": 12,
+              "md": 12,
+              "lg": 12
+            }
+          }
+        ],
+        "namespace": "ReactFlexboxGrid",
+        "props": {
+          "top": "xs"
+        }
+      }
+    ]
   }
 ]

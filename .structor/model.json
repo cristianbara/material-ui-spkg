@@ -5,26 +5,35 @@
       "pagePath": "/material-example-page-1",
       "children": [
         {
-          "type": "h2",
-          "variant": "default",
-          "props": {
-            "style": {
-              "textAlign": "center"
-            }
-          },
-          "children": [
-            {
-              "type": "span",
-              "text": "Material UI example page"
-            }
-          ]
-        },
-        {
           "type": "ThemeProvider",
           "namespace": "MaterialUI",
           "variant": "with grid layout",
           "props": {},
           "children": [
+            {
+              "type": "AppBar",
+              "variant": "default",
+              "children": [],
+              "namespace": "MaterialUI",
+              "props": {
+                "title": "Title"
+              }
+            },
+            {
+              "type": "h2",
+              "variant": "default",
+              "props": {
+                "style": {
+                  "textAlign": "center"
+                }
+              },
+              "children": [
+                {
+                  "type": "span",
+                  "text": "Material UI example page"
+                }
+              ]
+            },
             {
               "type": "Grid",
               "namespace": "ReactFlexboxGrid",
@@ -49,70 +58,37 @@
                               "type": "ListItemWithLeftIcon",
                               "variant": "default",
                               "children": [],
-                              "namespace": "MaterialUI",
-                              "props": {}
+                              "namespace": "MaterialUICombinations"
                             },
                             {
                               "type": "ListItemWithLeftIcon",
                               "variant": "default",
                               "children": [],
-                              "namespace": "MaterialUI",
-                              "props": {}
+                              "namespace": "MaterialUICombinations"
                             },
                             {
                               "type": "ListItemWithLeftIcon",
                               "variant": "default",
                               "children": [],
-                              "namespace": "MaterialUI",
-                              "props": {}
+                              "namespace": "MaterialUICombinations"
                             },
                             {
                               "type": "ListItemWithRightIcon",
                               "variant": "default",
                               "children": [],
-                              "namespace": "MaterialUI",
-                              "props": {}
+                              "namespace": "MaterialUICombinations"
                             },
                             {
                               "type": "ListItemWithRightIcon",
                               "variant": "default",
                               "children": [],
-                              "namespace": "MaterialUI",
-                              "props": {}
+                              "namespace": "MaterialUICombinations"
                             },
                             {
                               "type": "ListItemWithRightIcon",
                               "variant": "default",
                               "children": [],
-                              "namespace": "MaterialUI",
-                              "props": {}
-                            },
-                            {
-                              "type": "ListItem",
-                              "variant": "default",
-                              "children": [],
-                              "namespace": "MaterialUI",
-                              "props": {
-                                "primaryText": "List Item"
-                              }
-                            },
-                            {
-                              "type": "ListItem",
-                              "variant": "default",
-                              "children": [],
-                              "namespace": "MaterialUI",
-                              "props": {
-                                "primaryText": "List Item"
-                              }
-                            },
-                            {
-                              "type": "ListItem",
-                              "variant": "default",
-                              "children": [],
-                              "namespace": "MaterialUI",
-                              "props": {
-                                "primaryText": "List Item"
-                              }
+                              "namespace": "MaterialUICombinations"
                             }
                           ],
                           "namespace": "MaterialUI",
@@ -289,8 +265,7 @@
                                                   "type": "RaisedButtonWithIcon",
                                                   "variant": "default",
                                                   "children": [],
-                                                  "namespace": "MaterialUI",
-                                                  "props": {}
+                                                  "namespace": "MaterialUICombinations"
                                                 }
                                               ]
                                             }
@@ -384,6 +359,61 @@
                         },
                         {
                           "type": "Row",
+                          "namespace": "ReactFlexboxGrid",
+                          "variant": "with single column",
+                          "props": {
+                            "top": "xs"
+                          },
+                          "children": [
+                            {
+                              "type": "Col",
+                              "variant": "default",
+                              "children": [
+                                {
+                                  "type": "label",
+                                  "variant": "default",
+                                  "props": {},
+                                  "children": [],
+                                  "text": "Auto Complete: "
+                                },
+                                {
+                                  "type": "AutoComplete",
+                                  "variant": "default",
+                                  "children": [],
+                                  "namespace": "MaterialUI",
+                                  "props": {
+                                    "dataSource": [
+                                      "Argentina",
+                                      "Denmark",
+                                      "USA",
+                                      "Ukraine"
+                                    ],
+                                    "id": "uniqueId",
+                                    "fullWidth": true
+                                  }
+                                },
+                                {
+                                  "type": "FlatButton",
+                                  "variant": "default",
+                                  "children": [],
+                                  "namespace": "MaterialUI",
+                                  "props": {
+                                    "label": "Submit"
+                                  }
+                                }
+                              ],
+                              "namespace": "ReactFlexboxGrid",
+                              "props": {
+                                "xs": 12,
+                                "sm": 12,
+                                "md": 12,
+                                "lg": 12
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "type": "Row",
                           "variant": "default",
                           "children": [
                             {
@@ -423,6 +453,363 @@
                   "props": {
                     "top": "xs"
                   }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pageName": "Page59",
+      "pagePath": "/test-page-appbar",
+      "children": [
+        {
+          "type": "ThemeProvider",
+          "props": {},
+          "children": [
+            {
+              "type": "AppBar",
+              "variant": "default",
+              "children": [],
+              "namespace": "MaterialUI",
+              "props": {
+                "title": "Title"
+              }
+            },
+            {
+              "type": "Grid",
+              "variant": "default",
+              "props": {},
+              "children": [
+                {
+                  "type": "Row",
+                  "namespace": "ReactFlexboxGrid",
+                  "variant": "with columns: 6-6",
+                  "props": {
+                    "center": "xs",
+                    "top": "xs"
+                  },
+                  "children": [
+                    {
+                      "type": "Col",
+                      "namespace": "ReactFlexboxGrid",
+                      "variant": "50%",
+                      "props": {
+                        "xs": 6,
+                        "sm": 6,
+                        "md": 6,
+                        "lg": 6
+                      },
+                      "children": [
+                        {
+                          "type": "Placeholder",
+                          "variant": "default",
+                          "props": {},
+                          "children": [],
+                          "namespace": "ReactFlexboxGrid"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "Col",
+                      "namespace": "ReactFlexboxGrid",
+                      "variant": "50%",
+                      "props": {
+                        "xs": 6,
+                        "sm": 6,
+                        "md": 6,
+                        "lg": 6
+                      },
+                      "children": [
+                        {
+                          "type": "Placeholder",
+                          "variant": "default",
+                          "props": {},
+                          "children": [],
+                          "namespace": "ReactFlexboxGrid"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Row",
+                  "namespace": "ReactFlexboxGrid",
+                  "variant": "with columns: 6-6",
+                  "props": {
+                    "center": "xs",
+                    "top": "xs"
+                  },
+                  "children": [
+                    {
+                      "type": "Col",
+                      "namespace": "ReactFlexboxGrid",
+                      "variant": "50%",
+                      "props": {
+                        "xs": 6,
+                        "sm": 6,
+                        "md": 6,
+                        "lg": 6
+                      },
+                      "children": [
+                        {
+                          "type": "Placeholder",
+                          "variant": "default",
+                          "props": {},
+                          "children": [],
+                          "namespace": "ReactFlexboxGrid"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "Col",
+                      "namespace": "ReactFlexboxGrid",
+                      "variant": "50%",
+                      "props": {
+                        "xs": 6,
+                        "sm": 6,
+                        "md": 6,
+                        "lg": 6
+                      },
+                      "children": [
+                        {
+                          "type": "Placeholder",
+                          "variant": "default",
+                          "props": {},
+                          "children": [],
+                          "namespace": "ReactFlexboxGrid"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "namespace": "ReactFlexboxGrid"
+            }
+          ],
+          "namespace": "MaterialUI",
+          "variant": "default"
+        }
+      ]
+    },
+    {
+      "pageName": "Page79",
+      "pagePath": "/test-page-grid-single-column",
+      "children": [
+        {
+          "type": "div",
+          "variant": "default",
+          "props": {},
+          "children": [
+            {
+              "type": "ThemeProvider",
+              "namespace": "MaterialUI",
+              "variant": "with grid layout",
+              "props": {},
+              "children": [
+                {
+                  "type": "Grid",
+                  "namespace": "ReactFlexboxGrid",
+                  "variant": "navigation column",
+                  "props": {
+                    "fluid": true
+                  },
+                  "children": [
+                    {
+                      "type": "Row",
+                      "variant": "default",
+                      "children": [
+                        {
+                          "type": "Col",
+                          "variant": "default",
+                          "children": [
+                            {
+                              "type": "div",
+                              "variant": "default",
+                              "props": {
+                                "style": {
+                                  "padding": "5em"
+                                }
+                              },
+                              "children": [
+                                {
+                                  "type": "Placeholder",
+                                  "variant": "default",
+                                  "props": {},
+                                  "children": [],
+                                  "namespace": "ReactFlexboxGrid"
+                                }
+                              ]
+                            }
+                          ],
+                          "namespace": "ReactFlexboxGrid",
+                          "props": {
+                            "xs": 12,
+                            "sm": 12,
+                            "md": 12,
+                            "lg": 12
+                          }
+                        }
+                      ],
+                      "namespace": "ReactFlexboxGrid",
+                      "props": {
+                        "top": "xs"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pageName": "Page99",
+      "pagePath": "/test-page-form-with-autocomplete",
+      "children": [
+        {
+          "type": "div",
+          "variant": "default",
+          "props": {},
+          "children": [
+            {
+              "type": "ThemeProvider",
+              "namespace": "MaterialUI",
+              "variant": "with grid layout",
+              "props": {},
+              "children": [
+                {
+                  "type": "Grid",
+                  "namespace": "ReactFlexboxGrid",
+                  "variant": "navigation column",
+                  "props": {
+                    "fluid": true
+                  },
+                  "children": [
+                    {
+                      "type": "Row",
+                      "variant": "default",
+                      "children": [
+                        {
+                          "type": "Col",
+                          "variant": "default",
+                          "children": [
+                            {
+                              "type": "div",
+                              "variant": "default",
+                              "props": {
+                                "style": {
+                                  "padding": "5em"
+                                }
+                              },
+                              "children": [
+                                {
+                                  "type": "form",
+                                  "variant": "default",
+                                  "props": {},
+                                  "children": [
+                                    {
+                                      "type": "div",
+                                      "variant": "default",
+                                      "props": {
+                                        "style": {
+                                          "display": "block"
+                                        }
+                                      },
+                                      "children": [
+                                        {
+                                          "type": "div",
+                                          "variant": "default",
+                                          "props": {},
+                                          "children": [
+                                            {
+                                              "type": "label",
+                                              "variant": "default",
+                                              "props": {},
+                                              "children": [],
+                                              "text": "Enter some value"
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "div",
+                                          "variant": "default",
+                                          "props": {},
+                                          "children": [
+                                            {
+                                              "type": "AutoComplete",
+                                              "variant": "default",
+                                              "children": [],
+                                              "namespace": "MaterialUI",
+                                              "props": {
+                                                "dataSource": [
+                                                  "Argentina",
+                                                  "Denmark",
+                                                  "USA",
+                                                  "Ukraine"
+                                                ],
+                                                "id": "uniqueId",
+                                                "fullWidth": true
+                                              }
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "div",
+                                          "variant": "default",
+                                          "props": {},
+                                          "children": [
+                                            {
+                                              "type": "FlatButton",
+                                              "variant": "default",
+                                              "children": [],
+                                              "namespace": "MaterialUI",
+                                              "props": {
+                                                "label": "Cancel"
+                                              }
+                                            },
+                                            {
+                                              "type": "RaisedButton",
+                                              "namespace": "MaterialUI",
+                                              "variant": "primary",
+                                              "props": {
+                                                "label": "OK",
+                                                "primary": true
+                                              },
+                                              "children": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "div",
+                              "variant": "default",
+                              "props": {},
+                              "children": []
+                            }
+                          ],
+                          "namespace": "ReactFlexboxGrid",
+                          "props": {
+                            "xs": 12,
+                            "sm": 12,
+                            "md": 12,
+                            "lg": 12
+                          }
+                        }
+                      ],
+                      "namespace": "ReactFlexboxGrid",
+                      "props": {
+                        "top": "xs"
+                      }
+                    }
+                  ]
                 }
               ]
             }

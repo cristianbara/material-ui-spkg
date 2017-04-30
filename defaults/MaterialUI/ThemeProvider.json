@@ -2,7 +2,29 @@
   {
     "type": "ThemeProvider",
     "props": {},
-    "children": [],
+    "children": [
+      {
+        "type": "div",
+        "variant": "default",
+        "props": {
+          "style": {
+            "display": "flex",
+            "justifyContent": "center",
+            "height": "100px",
+            "alignItems": "center",
+            "backgroundColor": "#fcecd7",
+            "borderRadius": "4px"
+          }
+        },
+        "children": [
+          {
+            "type": "span",
+            "text": "Empty ThemeProvider",
+            "props": {}
+          }
+        ]
+      }
+    ],
     "namespace": "MaterialUI",
     "variant": "default"
   },
@@ -109,6 +131,65 @@
                   "sm": 9,
                   "md": 9,
                   "lg": 9
+                }
+              }
+            ],
+            "namespace": "ReactFlexboxGrid",
+            "props": {
+              "top": "xs"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "ThemeProvider",
+    "namespace": "MaterialUI",
+    "variant": "with centered placeholder",
+    "props": {},
+    "children": [
+      {
+        "type": "Grid",
+        "namespace": "ReactFlexboxGrid",
+        "variant": "navigation column",
+        "props": {
+          "fluid": true
+        },
+        "children": [
+          {
+            "type": "Row",
+            "variant": "default",
+            "children": [
+              {
+                "type": "Col",
+                "variant": "default",
+                "children": [
+                  {
+                    "type": "div",
+                    "variant": "default",
+                    "props": {
+                      "style": {
+                        "padding": "5em"
+                      }
+                    },
+                    "children": [
+                      {
+                        "type": "Placeholder",
+                        "variant": "default",
+                        "props": {},
+                        "children": [],
+                        "namespace": "ReactFlexboxGrid"
+                      }
+                    ]
+                  }
+                ],
+                "namespace": "ReactFlexboxGrid",
+                "props": {
+                  "xs": 12,
+                  "sm": 12,
+                  "md": 12,
+                  "lg": 12
                 }
               }
             ],
